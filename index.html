@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>wiki Table Editor</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<meta charset="utf-8">
+
+<style>
+a{
+	text-decoration:none;
+	color: #0645ad;
+}
+.wrapper{
+	display:flex;
+
+}
+.nav{
+	width: 160px;
+	font-size: 28px;
+	font-family:cambria;
+}
+.navWords{
+	width:130px;
+	font-size:12px;
+	display:inline-block;
+}
+.content{
+	flex: 1 1;
+	font-family:sans-serif;
+	line-height:1.5em;
+	font-size:0.8em;
+	display:flex;
+	flex-direction:column;
+}
+.contentRight{
+	width:20px;
+}
+textarea{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.codeInput{
+	width: 100%;
+	height:300px;
+	
+}
+.codeInpuptWrapper{
+
+}
+.ok{
+	width:8em;
+	text-align:center;
+	background-color: #aaa;
+}
+
+table{
+	width:100%;
+	margin: 1em 0;
+	background-color: #f9f9f9;
+	border-collapse: collapse;
+	color: black;
+	font-family: sans-serif;	
+		
+}
+table, th, td{
+	border: 1px #aaa solid;
+}
+table th{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+.tdInput{
+	width:100%;
+	height:100%;
+	margin: 0px;
+	font-family: sans-serif;
+}
+.hoverTd{
+	background-color: #eee;
+}
+
+.displayNone{
+	display:none;
+}
+</style>
+
+
+</head>
+
+<body>
+<div class="wrapper" >
+<div class="nav">
+	<span style="display:inline-block">Wiki<br>Table<br>Editor<br></span>
+	<span class= "navWords">wikipedia table editor visual graphic gui WYSIWYG contact golopot (at) gmail</span>
+</div>
+<div class="content">
+
+<div class="codeInpuptWrapper">
+<textarea  class="codeInput" spellcheck="false">
+===================================
+
+
+Paste code here.
+
+click the table to edit.
+
+new code will be generated.
+
+
+=================================	
+{| class="wikitable sortable" style="margin: 1ex auto 1ex auto"
+|-
+  ! Year
+  ! class="unsortable" | [[International Congress of Mathematicians#List of Congresses|ICM]] location
+  ! class="unsortable" | Medalists<ref>{{cite web|url=http://www.mathunion.org/general/prizes/fields/prizewinners|title=List of Fields Medallists|publisher=[[International Mathematical Union]] (IMU)|date=8 May 2008|accessdate=25 March 2009}}</ref>
+  ! class="unsortable" | Institution
+  ! class="unsortable" | Nationality
+|-
+  | 1936
+  | {{flagicon|Norway}} [[Oslo]]
+  | [[Lars Ahlfors]]<br />[[Jesse Douglas]]
+  | [[University of Helsinki]]<br>[[Massachusetts Institute of Technology]]
+  | {{flagicon|Finland}}<br>{{flagicon|US}}
+|-
+  | 1950
+  | {{flagicon|US}} [[Cambridge, Massachusetts|Cambridge]]
+  | [[Laurent Schwartz]]<br />[[Atle Selberg]]
+  | [[University of Nancy]]<br>[[Institute for Advanced Study]]
+  | {{flagicon|France}}<br>{{flagicon|Norway}}
+|-
+  | 1954
+  | {{flagicon|Netherlands}}  [[Amsterdam]]
+  | [[Kunihiko Kodaira]] <br /> [[Jean-Pierre Serre]]
+  | [[Institute for Advanced Study]] <br>[[Centre National de la Recherche Scientifique]]
+  | {{flagicon|Japan}}<br>{{flagicon|France}}
+|-
+  | 1958
+  | {{flagicon|UK}} [[Edinburgh]]
+  | [[Klaus Roth]]<br />[[René Thom]]
+  | [[University College London]]<br>[[University of Strasbourg]]
+  | {{flagicon|UK}}<br>{{flagicon|France}}
+|-
+  | 1962
+  | {{flagicon|Sweden}} [[Stockholm]]
+  | [[Lars Hörmander]]<br /> [[John Milnor]]
+  | [[University of Stockholm]]<br>[[Princeton University]]
+  | {{flagicon|Sweden}}<br>{{flagicon|US}}
+|-
+  | 1966
+  | {{flagicon|USSR}} [[Moscow]]
+  | [[Michael Atiyah]] <br /> [[Paul Cohen (mathematician)|Paul Joseph Cohen]] <br /> [[Alexander Grothendieck]] <br /> [[Stephen Smale]]
+  | [[University of Oxford]] <br /> [[Stanford University]] <br /> [[Institut des Hautes Études Scientifiques]] <br /> [[University of California, Berkeley]]
+  | {{flagicon|UK}}<br /> {{flagicon|US}}  <br /> None ([[statelessness|Stateless]]) <br /> {{flagicon|US}}
+|-
+  | 1970
+  | {{flagicon|France}} [[Nice]]
+  | [[Alan Baker (mathematician)|Alan Baker]]<br /> [[Heisuke Hironaka]] <br /> [[Sergei Novikov (mathematician)|Sergei Novikov]] <br /> [[John G. Thompson]]
+  | [[University of Cambridge]] <br />  [[Harvard University]] <br />  [[Moscow State University]] <br /> [[University of Cambridge]]
+  | {{flagicon|UK}} <br /> {{flagicon|Japan}} <br /> {{flagicon|USSR}} <br /> {{flagicon|US}}
+|-
+  | 1974
+  | {{flagicon|Canada}} [[Vancouver]]
+  | [[Enrico Bombieri]] <br /> [[David Mumford]]
+  | [[University of Pisa]] <br /> [[Harvard University]]
+  | {{flagicon|Italy}}<br /> {{flagicon|US}}
+|-
+  | 1978
+  | {{flagicon|Finland}} [[Helsinki]]
+  | [[Pierre Deligne]] <br /> [[Charles Fefferman]]<br />  [[Grigory Margulis]]<br /> [[Daniel Quillen]]
+  | [[Institut des Hautes Études Scientifiques]] <br /> [[Princeton University]] <br /> [[Moscow State University]] <br /> [[Massachusetts Institute of Technology]]
+  | {{flagicon|Belgium}} <br /> {{flagicon|US}} <br /> {{flagicon|USSR}} <br /> {{flagicon|US}}
+|-
+  | 1982
+  | {{flagicon|Poland}} [[Warsaw]]
+  | [[Alain Connes]] <br /> [[William Thurston]] <br /> [[Shing-Tung Yau]]
+  | [[Institut des Hautes Études Scientifiques]] <br /> [[Princeton University]] <br />[[Institute for Advanced Study]]
+  | {{flagicon|France}}  <br /> {{flagicon|US}}  <br /> {{flagicon|CHN}}
+|-
+  | 1986
+  | {{flagicon|US}} [[Berkeley, California|Berkeley]]
+  | [[Simon Donaldson]]<br /> [[Gerd Faltings]] <br /> [[Michael Freedman]]
+  | [[University of Oxford]] <br /> [[Princeton University]] <br />[[University of California, San Diego]]
+  | {{flagicon|UK}} <br /> {{flagicon|West Germany}} <br /> {{flagicon|US}}
+|-
+  | 1990
+  | {{flagicon|Japan}} [[Kyoto]]
+  | [[Vladimir Drinfeld]]<br />  [[Vaughan Jones|Vaughan F. R. Jones]] <br /> [[Shigefumi Mori]] <br /> [[Edward Witten]]
+  | [[Kharkiv Institute for Low Temperature Physics]] <br /> [[University of California, Berkeley]] <br /> [[Kyoto University]] <br /> [[Institute for Advanced Study]]
+  | {{flagicon|USSR}} <br /> {{flagicon|NZL}} <br /> {{flagicon|Japan}} <br /> {{flagicon|US}}
+|-
+  | 1994
+  | {{flagicon|SUI}} [[Zurich]]
+  | [[Jean Bourgain]] <br /> [[Pierre-Louis Lions]]<br /> [[Jean-Christophe Yoccoz]] <br /> [[Efim Zelmanov]]
+  | [[Institut des Hautes Études Scientifiques]] <br /> [[Paris Dauphine University]] <br />  [[Paris-Sud 11 University]] <br />  [[University of California, San Diego]]
+  | {{flagicon|Belgium}} <br /> {{flagicon|France}} <br /> {{flagicon|France}} <br /> {{flagicon|Russia}}
+|-
+  | 1998
+  | {{flagicon|GER}} [[Berlin]]
+  | [[Richard Borcherds]] <br /> [[Timothy Gowers]]<br /> [[Maxim Kontsevich]] <br /> [[Curtis T. McMullen]]
+  | [[University of California, Berkeley]] and [[University of Cambridge]] <br /> [[University of Cambridge]] <br /> [[Institut des Hautes Études Scientifiques]] and [[Rutgers University]] <br />  [[Harvard University]]
+  | {{flagicon|UK}} <br /> {{flagicon|UK}} <br /> {{flagicon|Russia}}  <br /> {{flagicon|US}}
+|-
+  | 2002
+  | {{flagicon|PRC}} [[Beijing]]
+  | [[Laurent Lafforgue]] <br />  [[Vladimir Voevodsky]]
+  | [[Institut des Hautes Études Scientifiques]] <br /> [[Institute for Advanced Study]]
+  | {{flagicon|France}}<br /> {{flagicon|Russia}}
+|-
+  | 2006
+  | {{flagicon|Spain}} [[Madrid]]
+  | [[Andrei Okounkov]] <br /> [[Grigori Perelman]] <br /> [[Terence Tao]]<br /> [[Wendelin Werner]]
+  | [[Princeton University]] <br /> None ([[Saint Petersburg]]) <br />  [[University of California, Los Angeles]] <br />[[Paris-Sud 11 University]]
+  | {{flagicon|Russia}} <br /> {{flagicon|Russia}}  <br /> {{flagicon|Australia}} <br /> {{flagicon|France}}
+|-
+  | 2010
+  | {{flagicon|India}} [[Hyderabad, India|Hyderabad]]
+  | [[Elon Lindenstrauss]] <br /> [[Ngô Bảo Châu]]<br />[[Stanislav Smirnov]]<br /> [[Cedric Villani]]
+  | [[Hebrew University of Jerusalem]] and [[Princeton University]]  <br /> [[Paris-Sud 11 University]] and [[Institute for Advanced Study]] <br /> [[University of Geneva]]<br />  [[École Normale Supérieure de Lyon]] and [[Institut Henri Poincaré]]
+  | {{flagicon|Israel}} <br /> {{flagicon|Vietnam}} {{flagicon|France}} <br /> {{flagicon|Russia}}<br /> {{flagicon|France}}
+|-
+  | 2014
+  | {{flagicon|ROK}} [[Seoul]]
+  | TBD
+  | 
+  | 
+|}
+
+
+</textarea>
+</div>
+<div class= "ok">Apply change</div>
+<div style="display:inline-block">
+<div id= "outTable">w</div>
+</div>
+</div>
+
+<div style="display:inline-block">
+<div class= "contentRight"><div style="display:none">a</div></div>
+</div>
+</div>
+
+
+</body>
+
+<script>
+
+
+/*
+ * 
+ * 
+ * 
+ * 
+ * mouseEvents
+ * 
+ * 
+ * 
+ * 
+ */
+function defineEventsTd(){
+	$("td").hover(
+		function(){
+			$(this).addClass("hoverTd");
+		},function(){
+			$(this).removeClass("hoverTd");
+		});
+	$("td").click(function(){
+		$(this).find("span").addClass("displayNone");
+		$(this).find("textarea").removeClass("displayNone");
+		$(this).find("textarea").focus();
+	});
+	$("th").hover(
+		function(){
+			$(this).addClass("hoverTd");
+		},function(){
+			$(this).removeClass("hoverTd");
+		});
+	$("th").click(function(){
+		$(this).find("span").addClass("displayNone");
+		$(this).find("textarea").removeClass("displayNone");
+		$(this).find("textarea").focus();
+	});
+	
+	$(".tdInput").blur(function(){
+		var id = $(this).parent().attr('id');
+		var ind = id.search("r");
+		var r = id.substring(0,ind);
+		var c = id.substring(ind+1,id.length);
+		row[r].cell[c].data = $(this).val();
+		objectToWiki();
+		objectToHtml();
+	});
+
+};
+	
+
+
+
+
+
+
+
+/*
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * wiki to object
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+var tableAttr ="default";
+var row = new Array();
+
+function wikiToObject(){
+	row =new Array();
+	var s = "0";
+	var r = 0;
+	var c = 0;
+	var w = $(".codeInput").val();
+	var t ;
+	var stack = "";
+	var bracketsLeft= false;
+	while(1){
+		t = tokenizer();
+		if (t=="")break;
+		var z = "state: "+ s+ "\ntoken:" + t +"\n-------------";
+	//	alert(z);
+	//	alert(w);
+		if (s=="0"){
+			if (t=="{|"){
+				s = "tableStart";
+			}
+			if (t==""){
+				break;
+			}
+		}else if(s=="tableStart"){
+			if(t=="|-"){
+				s ="rowStart";
+				r++;
+				row[r-1]= {rowAttr:"" ,cell:[]};
+			}else if(t=="|}"){
+				s="tableEnd";
+			}else if(isSpecialToken(t)){
+				stack += t;
+			}
+			else{
+				tableAttr = stack +t;
+				stack ="";
+			}
+		}else if(s=="rowStart"){
+			if(t=="\n|"){
+				s= "tdStart";
+				c++;
+				row[r-1].cell[c-1]={isHead:false, cellAttr:"",data:""}; 
+			}else if(t=="\n!"){
+				s= "thStart";
+				c++;
+				row[r-1].cell[c-1]={isHead:true, cellAttr:"",data:""}; 
+			}else if(t=="|}"){
+				s = "tableEnd";
+			}
+			else if(isSpecialToken(t)){
+				stack += t;
+			}else{
+				row[r-1].rowAttr = stack + t;
+				stack = "";
+			}
+		}else if(s=="tdStart"){
+			if(t=="|-"){
+				s= "rowStart";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+				bracketsLeft = false;
+				
+				c=0;
+				r++;
+				row[r-1]= {rowAttr:"" ,cell:[]};
+			}else if(t=="|"){
+				if(bracketsLeft==false){
+					if(row[r-1].cell[c-1].cellAttr==""){
+						row[r-1].cell[c-1].cellAttr = stack.trim();
+						stack = "";
+					}else{
+						stack += t;
+					}
+				}else{
+					stack += t;
+				}
+			}else if(t=="\n|"){
+				s="tdStart";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+				bracketsLeft = false;
+				
+				c++;
+				row[r-1].cell[c-1]={isHead:false, cellAttr:"",data:""}; 
+			}else if(t=="\n!"){
+				s="thStart";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+				bracketsLeft = false;
+				
+				c++;
+				row[r-1].cell[c-1]={isHead:true, cellAttr:"",data:""}; 
+			}else if(t=="|}"){
+				s = "tableEnd";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+				bracketsLeft = false;
+				c=0;
+			}
+			else if(t=="[[" || t=="{{"){
+				bracketsLeft = true;
+				stack += t;
+			}
+			else if(t=="]]" || t=="}}"){
+				bracketsLeft= false;
+				stack += t;
+			}
+			else if(isSpecialToken(t)){
+				stack += t;
+			}else{
+				stack += t;
+				
+			}
+			
+		}else if(s=="thStart"){
+			if(t=="|-"){
+				s= "rowStart";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+			
+				c=0;
+				r++;
+				row[r-1]= {rowAttr:"" ,cell:[]};	
+			}else if(t=="|"){
+				if(row[r-1].cell[c-1].cellAttr==""){
+					row[r-1].cell[c-1].cellAttr = stack.trim();
+					stack = "";
+				}else{
+					stack += t;
+				}
+			}else if(t=="\n|"){
+				s="tdStart";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+				
+				c++;
+				row[r-1].cell[c-1]={isHead:false, cellAttr:"",data:""}; 
+			}else if(t=="\n!"){
+				s="thStart";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+				
+				c++;
+				row[r-1].cell[c-1]={isHead:true, cellAttr:"",data:""}; 
+			}else if(t=="|}"){
+				s = "tableEnd";
+				row[r-1].cell[c-1].data = stack.trim();
+				stack = "";
+				c=0;
+			}else if(isSpecialToken(t)){
+				stack += t;
+			}else{
+				stack += t;
+				
+			}
+		}else if(s=="tableEnd"){
+			break;
+		}
+		
+	};
+	
+	function isSpecialToken(t){
+		var b = false;
+		b = b || (t == "{|");
+		b = b || (t == "|}");
+		b = b || (t == "!!");
+		b = b || (t == "||");
+		b = b || (t == "|");
+		b = b || (t == "|-");
+		return b;
+	}
+	
+	function tokenizer(){
+		if (w==""){return "";};
+		var s ="";
+		var t = "";
+		var i = -1;
+		var c = w[0];
+		function autoDirect(){
+			var b = false;
+			b = b || (c == "{");
+			b = b || (c == "|");
+			b = b || (c == "[");
+			b = b || (c == "]");
+			b = b || (c == "}");
+			b = b || (c == "!");
+			b = b || (c == "\n");
+			
+			t += s;
+			s = "" ;
+			if (b){ 
+				s = c;
+			}else{ 
+				t += c;
+				}
+		};
+		while(i< w.length){
+			i++;
+			c = w[i];
+			
+			if( s ==""){
+				autoDirect();
+			}else if( s =="{"){
+				if(c=="|"){
+					
+					s = "{|";
+					break;
+				}else if(c =="{"){
+					s = "{{";
+					break;
+				}else{
+					autoDirect();
+				}
+			}else if( s =="|"){
+				if(c=="|"){
+					s ="\n|";
+					break;
+				}else if(c=="-"){
+					s = "|-";
+					break;
+				}else if( c=="}"){
+					s= "|}";
+					break;
+				}else{
+					s ="|";
+					i--;
+					break;
+				}
+				
+			}else if( s =="\n"){
+				if(c==" "){
+				}else if( c== "|"){
+					s = "\n|";
+				}else if ( c=="!"){
+					s = "\n!";
+				}else{
+					autoDirect();
+				}
+			}else if( s =="\n|"){
+				if(c== "|"){
+					s = "\n|";
+					break;
+				}else if (c =="-"){
+					s = "|-";
+					
+					break;
+				}else if (c =="}"){
+					s = "|}";
+					break;
+				}
+				else {
+					s = "\n|";
+					i--;
+					break;
+				}
+				
+			}else if( s =="\n!"){
+				if (c == "!"){
+					s ="\n!";
+					break;
+				}
+				else{
+					s = "\n!";
+					i--;
+					break;
+				}
+				
+			}else if( s =="["){
+				if( c =="["){
+					s = "[[";
+					break;
+				}else{
+					autoDirect();
+				}
+				
+			}else if( s =="]"){
+				if( c =="]"){
+					s = "]]";
+					break;
+				}else{
+					autoDirect();
+				}
+			}else if( s =="}"){
+				if( c =="}"){
+					s = "}}";
+					break;
+				}else{
+					autoDirect();
+				}
+			}else if( s =="!"){
+				if( c =="!"){
+					s = "\n!";
+					break;
+				}else{
+					autoDirect();
+				}
+			}else{
+				return "error"+s+"**";
+			}
+		}
+		if(t ==""){
+			w = w.substring(i+1,w.length);
+			return s;
+		}else {
+			w = w.substring(t.length,w.length);
+			return t;
+		}
+		
+	}
+
+}
+
+
+
+
+
+/*
+ * 
+ * 
+ * 
+ * 
+ * object to html
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+function objectToHtml(){
+	var ht ="<table>\n";
+	for(var i=0;i<row.length;i++){
+		ht+="<tr>\n";
+		for(var j=0;j<row[i].cell.length;j++){
+			var thtd = row[i].cell[j].isHead ? "th" : "td";
+			ht+= "<"+ thtd +" id='" + i +"r" + j +"' ";
+			ht+= row[i].cell[j].cellAttr +">";
+			ht+= tdSpanHtml(i,j) + tdTextareaHtml(i,j)+"</td>";
+		}
+		ht+="</tr>\n";
+	}
+	ht+= "</table>";
+	$("#outTable").html(ht);
+	defineEventsTd();
+}
+function tdTextareaHtml(i,j){
+	var t= "<textarea class='displayNone tdInput'>";
+	t += row[i].cell[j].data;
+	t += "</textarea>";
+	return t;
+}
+function tdSpanHtml(i,j){
+	return t = "<span>" + wmParse(row[i].cell[j].data) + "</span>";
+}
+function wmParse(w){
+	return bracketParse(curbracketParse(refParse(w)));
+}
+function bracketParse(w){
+	var r ="";
+	while(w!=""){
+		
+		var ind = w.search(/\[\[/);
+		if (ind !=-1){
+			r += w.substring(0, ind);
+			w = w.substring(ind,w.length);
+			var ind2 = w.search(/\]\]/);
+			if(ind2 !=- 1){
+				var ind3 = w.search("\\|");
+				if(ind3 !=-1 && ind3<ind2){
+					r += "<a>";
+					r += w.substring(ind3+1, ind2);
+					r += "</a>";
+					w = w.substring(ind2+2,w.length);
+				}
+				else{
+					r += "<a>";
+					r += w.substring(2,ind2);
+					r += "</a>";
+					w = w.substring(ind2+2,w.length);
+				}
+			}
+			else{
+				r += w;
+				w = "";
+			}
+		}
+		else{
+			r += w;
+			w ="";
+		}
+	}
+	return r;
+}
+function curbracketParse(w){
+	var r ="";
+	while(w!=""){
+		var ind = w.search(/{{.*\}}/);
+		if (ind ==-1){
+			r+= w;
+			w = "";
+		}else {
+			r+= w.substring(0,ind);
+			w = w.substring(ind,w.length);
+			var ind2 =w.search(/}}/);
+			if( ind2==-1){
+				r += w.substring(0,w.length);
+				w = "";	
+			}
+			else{
+				var ind3 = w.search("\\|");
+				if(ind3 ==-1){
+					r += "<a >";
+					r += w.substring(2,ind2);
+					r += "</a>";
+					w = w.substring(ind2+2,w.length);
+				}
+				else{
+					r += "<a>";
+					r += w.substring(ind3+1,ind2);
+					r += "</a>";
+					w = w.substring(ind2+2,w.length);
+				}
+			}
+		}
+		
+	}
+	return r;
+}
+function refParse(w){
+	var r = "";
+	var ind = w.search("<ref>");
+	
+	while(w!=""){
+		if(ind != -1){
+			r += w.substring(0,ind);
+			w = w.substring(ind,w.length);
+			var ind2= w.search("</ref>");
+			if(ind2 != -1){	
+				r += "<a href='empty' style='font-size:0.9em'>[i]</a>";
+				w = w.substring(ind2+6, w.length);
+			}
+			else{
+				r += w;
+				w ="";
+			}
+		}
+		else{
+			r += w;
+			w ="";	
+		}
+	}
+	return r;
+}
+/*
+ * 
+ * 
+ * 
+ * 
+ * 
+ * object To wiki
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+function objectToWiki(){
+	var wc = "{|"+tableAttr + "\n";
+	for(var i=0;i<row.length;i++){
+		wc+= "\|" +"-"+"\n";
+		for(var j=0;j<row[i].cell.length;j++){
+			var head ="\|";
+			if (row[i].cell[j].isHead)head= "!";
+			if (row[i].cell[j].cellAttr==""){
+				wc+= "  "+ head + " " + row[i].cell[j].data +"\n";
+			}else{
+			wc+= "  "+head+ " " + row[i].cell[j].cellAttr +" "+"\| " + row[i].cell[j].data +"\n";
+			}
+		}
+	}
+	wc+= "\|"+ "}";
+	$(".codeInput").val(wc);
+}
+
+
+/*
+ * 
+ *
+ * initiation 
+ * 
+ *  
+ * 
+ * */
+$(".codeInput").blur(function(){
+	wikiToObject();
+	objectToHtml();
+	objectToWiki();
+});
+wikiToObject();
+objectToHtml();
+
+
+</script>
+<!-- Start 1FreeCounter.com code -->
+  
+  <script language="JavaScript">
+  var data = '&r=' + escape(document.referrer)
+	+ '&n=' + escape(navigator.userAgent)
+	+ '&p=' + escape(navigator.userAgent)
+	+ '&g=' + escape(document.location.href);
+
+  if (navigator.userAgent.substring(0,1)>'3')
+    data = data + '&sd=' + screen.colorDepth 
+	+ '&sw=' + escape(screen.width+'x'+screen.height);
+
+  document.write('<a href="http://www.1freecounter.com/stats.php?i=103098" target=\"_blank\" >');
+  document.write('<img alt="Free Counter" border=0 hspace=0 '+'vspace=0 src="http://www.1freecounter.com/counter.php?i=103098' + data + '">');
+  document.write('</a>');
+  </script>
+
+<!-- End 1FreeCounter.com code -->
+
+
+</html>
+
